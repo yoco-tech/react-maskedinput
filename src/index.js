@@ -195,8 +195,8 @@ var MaskedInput = React.createClass({
       ref={r => this.input = r }
       maxLength={patternLength}
       onChange={this._onChange}
+      onKeyDown={this._onKeyDown}
       onBeforeInput={this._onKeyPress}
-      onKeyPress={this._onKeyPress}
       onPaste={this._onPaste}
       placeholder={placeholder || this.mask.emptyValue}
       size={size || patternLength}
